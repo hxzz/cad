@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.hexincad.webcad</groupId>
+  <artifactId>cad</artifactId>
+  <version>0.02-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+  <name>cad</name>
+  <url>http://www.hexincad.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+  
+    <dependency>
+     	<groupId>om.hexincad.webcad</groupId>
+     	<artifactId>common-lib</artifactId>
+     	<version>0.02</version>
+    </dependency>
+    <dependency>
+     	<groupId>om.hexincad.webcad</groupId>
+     	<artifactId>tribune</artifactId>
+     	<version>0.02-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+     	<groupId>om.hexincad.webcad</groupId>
+     	<artifactId>usersManager</artifactId>
+     	<version>0.02-SNAPSHOT</version>
+    </dependency>
+    
+  </dependencies>
+</project>
