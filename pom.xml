@@ -14,8 +14,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.3</version>
         <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
+	          <source>1.8</source>
+	          <target>1.8</target>
         </configuration>
       </plugin>
       <plugin>
@@ -23,9 +23,13 @@
         <version>2.6</version>
         <configuration>
           <failOnMissingWebXml>false</failOnMissingWebXml>
+          <overlays>
+          	<overlay></overlay>
+          </overlays>
         </configuration>
       </plugin>
     </plugins>
+    <finalName>cad</finalName>
   </build>
 
  
@@ -34,15 +38,15 @@
   		<groupId>com.hexincad.webcad</groupId>
   		<artifactId>common-lib</artifactId>
   		<version>0.02</version>
-  		<type>war</type>
-  	</dependency>
+  		<type>jar</type>
+  	</dependency> 
   	<dependency>
-  		<groupId>tribune</groupId>
+  		<groupId>com.hexincad.webcad</groupId>
   		<artifactId>tribune</artifactId>
   		<version>0.02-SNAPSHOT</version>
   		<type>war</type>
   	</dependency>
-  	<dependency>
+	<dependency>
   		<groupId>com.hexincad.webcad</groupId>
   		<artifactId>usersManager</artifactId>
   		<version>0.02-SNAPSHOT</version>
@@ -53,6 +57,6 @@
   		<artifactId>modelParamsHandler</artifactId>
   		<version>0.02-SNAPSHOT</version>
   		<type>war</type>
-  	</dependency>
+  	</dependency> 
   </dependencies>
 </project>
